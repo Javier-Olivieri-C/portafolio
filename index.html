@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/dbc8d66b9a.js"></script>
     <script src="functions.js" async></script>
-    <script src="https://use.fontawesome.com/dbc8d66b9a.js" async></script>
     <title>Portafolio Javier Olivieri</title>
 </head>
 <body>
@@ -56,19 +56,19 @@
             <h2 data-ix="slowfade-scroll-bigs">Portafolio</h2>
             <div class="galeria">
                 <div class="item red">
-                    <img src="img/artistica-web.jpg" alt="beautifull view">
+                    <img src="img/artistica-web.jpg" alt="Pagina web de una artística creada con WordPress" onclick="redireccionar('https://xn--artsticamanosalaobra-r4b.com/')">
                     <i class="fa fa-wordpress"></i>
                 </div>
                 <div class="item red">
-                    <img src="img/wedes-web.jpg" alt="person">
+                    <img src="img/wedes-web.jpg" alt="Pagina web de una empresa que crea sitios web creada con WordPress" onclick="redireccionar('https://wedes.com.ar/')">
                     <i class="fa fa-wordpress"></i>
                 </div>
                 <div class="item red">
-                    <img src="img/elquijotelibros-web.jpg" alt="beautifull view">
+                    <img src="img/elquijotelibros-web.jpg" alt="Pagina web de una libreria creada con WordPress" onclick="redireccionar('https://elquijotelibros.com/')">
                     <i class="fa fa-wordpress"></i>
                 </div>
                 <div class="item red">
-                    <img src="img/encriptador-one.jpg" alt="person">
+                    <img src="img/encriptador-one.jpg" alt="Pagina web de encriptador de palabras de ONE" onclick="redireccionar('https://javier-olivieri-c.github.io/encriptador-one/')">
                     <i class="fa fa-code"></i>
                 </div>
             </div>
@@ -94,6 +94,31 @@
                 <div class="elemento">
                     <img src="img/logo-c++.png" alt="">
                 </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <form class="formulario" id="formulario" onsubmit="return validarFormulario()">
+                <h3>CONTACTO</h3>
+                <div class="input-formulario">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" placeholder="Juan" id="nombre" name="nombre">
+                </div>
+                <div class="input-formulario">
+                    <label for="correo">Correo</label>
+                    <input type="email" placeholder="ejemplo@ejemplo.com" id="correo" name="correo">
+                </div>
+                <div class="input-formulario">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" placeholder="+5491123456789" id="telefono" name="telefono">
+                </div>
+                <div class="input-formulario">
+                    <label for="mensaje">Consulta</label>
+                    <textarea></textarea>
+                </div>
+                <div class="btn-formulario">
+                    <input type="submit" class="btn-especial" value="Enviar">
+                </div>
+            </form>
             </div>
         </section>
     </main>
