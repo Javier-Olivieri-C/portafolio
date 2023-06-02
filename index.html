@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="functions.js" async></script>
+    <script src="https://use.fontawesome.com/dbc8d66b9a.js" async></script>
     <title>Portafolio Javier Olivieri</title>
 </head>
 <body>
     <header>
         <div class="nav" id="sticker">
             <div class="menu">
-                <a href="#inicio">inicio</a>
-                <a href="#servicio">servicios</a>
-                <a href="#trabajo">trabajo</a>
-                <a href="#contacto">contacto</a>
+                <a href="#">inicio</a>
+                <a href="#sobre-mi" class="scroll-link">sobre mi</a>
+                <a href="#portafolio" class="scroll-link">portafolio</a>
+                <a href="#conocimientos" class="scroll-link">conocimientos</a>
+                <a href="#contacto" class="scroll-link">contacto</a>
             </div>
         </div>
         <div class="inner-header flex">
@@ -38,7 +41,7 @@
     </header>
 
     <main>
-        <section class="contenedor">
+        <section class="contenedor" id="sobre-mi">
             <div class="sobre-mi">
                 <h2 data-ix="slowfade-scroll-bigs">Acerca de Mí</h2>
                 <div>
@@ -49,20 +52,47 @@
                 </div>
             </div>
         </section>
-        <section class="portafolio">
+        <section class="portafolio" id="portafolio">
             <h2 data-ix="slowfade-scroll-bigs">Portafolio</h2>
-            <div class="contenedor">
+            <div class="galeria">
                 <div class="item red">
                     <img src="img/artistica-web.jpg" alt="beautifull view">
                     <i class="fa fa-wordpress"></i>
                 </div>
                 <div class="item red">
-                    <img src="https://preview.ibb.co/gQbzQ5/colt_steele_firemarshall.jpg" alt="person">
+                    <img src="img/wedes-web.jpg" alt="person">
                     <i class="fa fa-wordpress"></i>
                 </div>
                 <div class="item red">
-                    <img src="http://preview.ibb.co/kd9Esk/colt_steele_smugglerscave.jpg" alt="beautifull view">
+                    <img src="img/elquijotelibros-web.jpg" alt="beautifull view">
+                    <i class="fa fa-wordpress"></i>
+                </div>
+                <div class="item red">
+                    <img src="img/encriptador-one.jpg" alt="person">
                     <i class="fa fa-code"></i>
+                </div>
+            </div>
+        </section>
+        <section class="conocimientos" id="conocimientos">
+            <h2 data-ix="slowfade-scroll-bigs">Mis Conocimientos</h2>
+            <div class="galeria">
+                <div class="elemento">
+                    <img src="img/logo-html.png" alt="">
+                </div>
+                <div class="elemento">
+                    <img src="img/logo-css.png" alt="">
+                </div>
+                <div class="elemento">
+                    <img src="img/logo-javascript.png" alt="">
+                </div>
+                <div class="elemento">
+                    <img src="img/logo-java.png" alt="">
+                </div>
+                <div class="elemento">
+                    <img src="img/logo-python.png" alt="">
+                </div>
+                <div class="elemento">
+                    <img src="img/logo-c++.png" alt="">
                 </div>
             </div>
         </section>
@@ -70,6 +100,5 @@
 
     <footer>
     </footer>
-    <script src="https://use.fontawesome.com/dbc8d66b9a.js"></script>
 </body>
 </html>

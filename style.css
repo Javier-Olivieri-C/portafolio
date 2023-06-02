@@ -19,6 +19,14 @@ h2{
   letter-spacing: 1.2px;
 }
 
+h3{
+  font-size: 1.5em;
+  color: rgb(253, 2, 16);
+  text-transform: uppercase;
+  font-weight: 550;
+  letter-spacing: 1.2px;
+}
+
 p{
   font-family: 'Lato', sans-serif;
   letter-spacing: 1px;
@@ -167,14 +175,22 @@ main{
   margin: 30px;
   text-align: center;
   transition: all 450ms ease;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.portafolio:hover{
+/*.portafolio:hover{
   box-shadow: -1px 6.5px 15px rgba(208, 211, 214, 0.75);
-}
+}*/
 
 .portafolio h2{
   padding: 20px 0 0 0;
+  width: 100%;
+}
+
+.portafolio .galeria{
+  gap: 40px;
 }
 
 .portafolio .contenedor{
@@ -190,8 +206,7 @@ div.item {
   max-width: 310px;
   width: 100%;
   background: #000000;
-  text-align: center;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);  
+  text-align: center;  
 }
 
 div.item * {
@@ -215,26 +230,6 @@ div.item i {
   height: 60px;
   line-height: 60px;
   background-color: #fff;  
-}
-div.item p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 20px;
-  border-radius: 15%;
-  color: #000;
-  width: 60px;
-  height: 30px;
-  line-height: 30px;
-  background-color: #fff;  
-}
-
-div.item a {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  position: absolute;
 }
 
 div.item.red {
@@ -262,6 +257,45 @@ div.item i {
 div.item:hover i {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 300ms 100ms cubic-bezier(.21,.85,.65,1.32);
+}
+
+/* Tecnologías */
+
+.conocimientos{
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  flex-wrap: wrap;
+  z-index: 999;
+}
+
+.conocimientos h2{
+    width: 100%;
+}
+
+.galeria{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding-bottom: 30px;
+}
+
+.elemento{
+  flex: 1 0 auto;
+  margin: 0 30px;
+  width: 130px;
+  height: 130px;
+  text-align: center;
+}
+
+.elemento img{
+  object-fit: contain;
+  width: inherit;
+  height: inherit;
 }
 
 /*Shrinking for mobile*/
