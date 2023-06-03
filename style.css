@@ -50,6 +50,11 @@ header {
   z-index: 999;
 }
 
+.menu-hamburguesa,
+.cerrar-menu{
+  display: none;
+}
+
 .menu{
   margin: 0;
   backdrop-filter: blur(80px);
@@ -290,7 +295,7 @@ div.item:hover i {
 }
 
 .conocimientos h2{
-    width: 100%;
+  width: 100%;
 }
 
 .galeria{
@@ -358,5 +363,92 @@ footer{
   }
   h1 {
     font-size:24px;
+  }
+  .menu a{
+    margin: 0 10px;
+    font-size: 0.7em;
+  }
+  .sobre-mi{
+    width: 70%;
+  }
+  .galeria{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .portafolio .galeria{
+    gap: 20px;
+  }
+  .item.red img{
+    height: 150px;
+  }
+}
+
+@media (max-width: 450px) {
+  .inner-header{
+    height: 40vh;
+  }
+
+  .menu-hamburguesa,
+  .cerrar-menu{
+    display: block;
+    border: 0;
+    font-size: 1.3rem;
+    background-color: transparent;
+    color: #FEFFFF;
+  }
+
+  .menu-hamburguesa{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem 1rem 0 0;
+  }
+
+  .menu{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: end;
+    justify-content:start;
+    padding: 15px;
+  }
+
+  .menu.visible{
+    opacity: 1;
+    visibility: visible;
+    transition: all 250ms ease;
+  }
+
+  .menu a{
+    line-height: 40px;
+  }
+
+  h2{
+    font-size: 1.5rem;
+  }
+
+  .sobre-mi p{
+    font-size: 12px;
+  }
+
+  .btn-descarga{
+    font-size: .6em;
+    margin: 1.5rem;
+  }
+  .portafolio .galeria{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .conocimientos .galeria{
+    grid-gap: 10px;
+  }
+
+  .elemento{
+    width: 90px;
+    height: auto;
   }
 }
