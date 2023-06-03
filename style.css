@@ -67,10 +67,15 @@ header {
   text-decoration: none;
   color: #FEFFFF;
   margin: 0 25px;
-  line-height: 70px;
+  line-height: 60px;
   letter-spacing: .9px;
   text-transform: uppercase;
-  transition: all 250ms ease;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+.menu a:hover {
+  border-bottom: 2px solid #FEFFFF;
 }
 
 .logo {
@@ -172,6 +177,7 @@ main{
 }
 
 .btn-descarga:hover{
+  cursor: pointer;
   background-color: transparent;
   border: 2px solid rgb(253, 2, 16);
   color: black;
