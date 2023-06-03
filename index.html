@@ -74,7 +74,7 @@
             </div>
         </section>
         <section class="conocimientos" id="conocimientos">
-            <h2 data-ix="slowfade-scroll-bigs">Mis Conocimientos</h2>
+            <h2 data-ix="slowfade-scroll-bigs">Conocimientos</h2>
             <div class="galeria">
                 <div class="elemento">
                     <img src="img/logo-html.png" alt="">
@@ -97,30 +97,25 @@
             </div>
         </section>
         <section id="contacto">
-            <form class="formulario" id="formulario" onsubmit="return validarFormulario()">
-                <h3>CONTACTO</h3>
-                <div class="input-formulario">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" placeholder="Juan" id="nombre" name="nombre">
-                </div>
-                <div class="input-formulario">
-                    <label for="correo">Correo</label>
-                    <input type="email" placeholder="ejemplo@ejemplo.com" id="correo" name="correo">
-                </div>
-                <div class="input-formulario">
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" placeholder="+5491123456789" id="telefono" name="telefono">
-                </div>
-                <div class="input-formulario">
-                    <label for="mensaje">Consulta</label>
-                    <textarea></textarea>
-                </div>
-                <div class="btn-formulario">
-                    <input type="submit" class="btn-especial" value="Enviar">
-                </div>
+            <h2 data-ix="slowfade-scroll-bigs">Contacto</h2>
+            <form class="formulario" id="contacto-formulario">
+               <div class="valor col x-50">
+                  <input id="name" class="input-text js-input" type="text" required>
+                  <label class="label" for="name">Nombre</label>
+               </div>
+               <div class="valor col x-50">
+                  <input id="email" class="input-text js-input" type="email" required>
+                  <label class="label" for="email">E-mail</label>
+               </div>
+               <div class="valor col x-100">
+                  <input id="message" class="input-text js-input" type="text" required>
+                  <label class="label" for="message">Mensaje</label>
+               </div>
+               <div class="valor col x-100 align-center">
+                  <input class="enviar-btn" type="submit" value="Enviar">
+               </div>
             </form>
-            </div>
-        </section>
+         </section>
     </main>
 
     <footer>
