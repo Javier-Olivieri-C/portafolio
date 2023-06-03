@@ -1,22 +1,19 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  $name = $_POST['name'];
-  $email = $_POST['email'];
-  $message = $_POST['message'];
+// Obtener los valores del formulario
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
 
-  // Aquí puedes implementar la lógica para enviar el correo electrónico usando la información recibida
-  // Puedes utilizar la función mail() de PHP o utilizar una biblioteca externa como PHPMailer
+// Configurar el correo electrónico
+$to = 'javierolivieric@gmail.com'; // Cambia esto con tu dirección de correo electrónico
+$subject = 'Nuevo mensaje de contacto';
+$body = "Nombre: $name\nEmail: $email\nMensaje: $message";
+$headers = "From: $email";
 
-  // Ejemplo con la función mail() de PHP
-  $to = 'javierolivieric@gmail.com';
-  $subject = 'Nuevo mensaje de contacto';
-  $body = "Nombre: $name\nEmail: $email\nMensaje: $message";
-  $headers = "From: $email";
-
-  if (mail($to, $subject, $body, $headers)) {
-    echo 'Mensaje enviado con éxito';
-  } else {
-    echo 'Error al enviar el mensaje';
-  }
+// Enviar el correo electrónico
+if (mail($to, $subject, $body, $headers)) {
+  echo 'Correo electrónico enviado correctamente';
+} else {
+  echo 'Error al enviar el correo electrónico';
 }
 ?>
