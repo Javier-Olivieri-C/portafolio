@@ -129,8 +129,6 @@ header {
   }
 }
 
-/* FINAL HEADER */
-
 /* INICIO MAIN*/
 
 main{
@@ -166,6 +164,24 @@ main{
   font-size: 18px;
   color: rgb(83, 81, 81);
   text-align: justify;
+}
+
+.btn-descarga:hover{
+  background-color: transparent;
+  border: 2px solid rgb(253, 2, 16);
+  color: black;
+}
+
+.btn-descarga{
+  background-color: rgb(253, 2, 16);
+  font-size: 1em;
+  font-weight: bold;
+  color: #FEFFFF;
+  padding: 16px 40px;
+  border-radius: 10px;
+  border: 2px solid rgb(253, 2, 16);
+  margin: 2rem;
+  transition: all 450ms ease;
 }
 
 /* portafolio */
@@ -263,7 +279,7 @@ div.item:hover i {
 /* Tecnologías */
 
 .conocimientos{
-  margin: 30px;
+  margin: 30px 30px 50px 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -299,69 +315,36 @@ div.item:hover i {
   height: inherit;
 }
 
-/* CONTACTO */ 
+/* FOOTER */ 
 
-#contacto {
-  max-width: 650px;
-  margin: 30px auto;
-}
-
-#contacto h2{
+footer{
   text-align: center;
 }
 
-.formulario {
-  .valor {
-     position: relative;
-     margin: 32px 0;
+.pie-de-pagina {
+  background-color: #000000;
+  height: 100px;
+  padding-top: 10px;
 }
 
-.input-text {
-  display: block;
-  width: 100%;
-  height: 36px;
-  border-width: 0 0 2px 0;
-  border-color: #000;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 400;
-     
-  &:focus {
-    outline: none;
-  }
-     
-  &:focus,
-  &.not-empty {
-    + .label {
-        transform: translateY(-24px);
-    }
-  }
-}
-
-.label {
-  position: absolute;
-  left: 20px;
-  bottom: 11px;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 400;
-  color: #888;
-  cursor: text;
-  transition: transform .2s ease-in-out;
-}
-  
-.enviar-btn {
-  display: inline-block;
-  background-color: rgb(253, 2, 16);
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+.pie-de-pagina p {
+  color: white;
+  font-weight: bold;
   font-size: 16px;
-  line-height: 24px;
-  padding: 8px 16px;
-  border: none;
-  cursor: pointer;
-  }
+}
+
+.redes-sociales a {
+  color: white;
+  padding: 0px 5px 0px 5px;
+}
+
+.redes-sociales a:hover {
+  color: rgb(253, 2, 16);
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 /*Shrinking for mobile*/
